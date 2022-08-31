@@ -41,5 +41,5 @@ adb -s target push xxxxx.zip /sdcard/
 ![png](/img/install.png)
 
 如果安装的模块生效,则就可以可以通过logcat看到如下
-![png](/img/template.png)
+![png](/img/show.png)
 
