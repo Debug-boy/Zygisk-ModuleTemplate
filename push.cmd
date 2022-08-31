@@ -1,0 +1,1 @@
+adb -s 374b816d push out\zygisk-hacker-v1.0.0-release.zip /sdcard/a_zygisk_module/

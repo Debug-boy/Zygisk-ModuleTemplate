@@ -1,0 +1,7 @@
+module_name=${module_name}
+id=${id}
+name=${name}
+version=${version}
+versionCode=${versionCode}
+author=${author}
+description=${description}
