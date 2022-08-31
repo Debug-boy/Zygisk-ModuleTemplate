@@ -1,57 +1,31 @@
 # Zygisk-ModuleTemplate
 Zygisk module template. refer to  [Riru-ModuleTemplate](https://github.com/RikkaApps/Riru-ModuleTemplate) and [zygisk-module-sample](https://github.com/topjohnwu/zygisk-module-sample)
 
-
-## Build
-You must modify local.properties to adapt your SDK path
-
-You can also modify  /module/build.gradle file to match your NDK and CMAKE versions.
-
-Make sure you have a jdk11 environment.
-
-on the command line
-run
-```
-gradlew :module:assembleRelease
-```
-or click
-```
-build.bat
-```
-
-## Others
-builded files in /out
-
-And You can install it in Magisk24.0+
-
-After reboot
-
-you can find log in LogCat
-![png](/img/template.png)
-
-
 ## 说明
-这是一个生成zygisk模块的模板,之前找了好久才找到了一个生成riru的模板,但是不能直接用,要改
+由于riru模块已经后可取代的新zygisk,所以参考的别人的仓库生成了一个自动构建zygisk模块的模板
 
-所以我参考了zygisk-lsposed的customize.sh稍微改了下适用最新的zygisk模块
+构建这个项目的时候遇到了很多坑，这里都修复好了的,只需要关注  ##构建 注意就行
 
 ## 构建
-修改local.properties为自己的sdk路径
+修改[module.gradle]里面的模块信息                                   [可选]
 
-你也可以修改/module/build.gradle里面的ndk和cmake版本为自己的版本
+修改[local.properties]为自己的sdk路径,这个很重要                     [必须]
 
-需要配置jdk11的环境
+你也可以修改/module/build.gradle里面的ndk和cmake版本为自己的版本       [必须]
 
-命令行下执行
-```
-gradlew :module:assembleRelease
-```
-或者双击
-```
-build.bat
-```
+需要配置jdk11的环境                                                [必须]
 
-构建完的文件在/out文件夹里.
+构建方法1 : 在菜单栏里面打开构建选项(builder),点击Make Project 快捷键“[Ctrl + F9]”
+构建方法2 ： 打开命令行,运行 "gradlew :module:assembleRelease"
+构建方法3 ： 运行 [build.bat]脚本文件
+
+如果构建成功，生成的zip模块文件在/out文件夹里.
 
 把生成zip传到手机里就可以用magisk安装了.
+
+如果安装成功会看到如下图片
+![png](/img/install.png)
+
+如果安装的模块生效,则就可以可以通过logcat看到如下
+![png](/img/template.png)
 
