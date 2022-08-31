@@ -30,9 +30,12 @@ Zygisk module template. refer to  [Riru-ModuleTemplate](https://github.com/Rikka
 运行 [build.bat]脚本文件
 ```
 
-如果构建成功，生成的zip模块文件在/out文件夹里.
+如果构建成功，生成的zip模块文件在/out文件夹里. 把生成zip传到手机里就可以用magisk安装了.
 
-把生成zip传到手机里就可以用magisk安装了.
+可使用命令
+```
+adb -s target push xxxxx.zip /sdcard/
+```
 
 如果安装成功会看到如下图片
 ![png](/img/install.png)
