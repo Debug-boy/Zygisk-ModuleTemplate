@@ -15,9 +15,20 @@ Zygisk module template. refer to  [Riru-ModuleTemplate](https://github.com/Rikka
 
 需要配置jdk11的环境                                                [必须]
 
-构建方法1 : 在菜单栏里面打开构建选项(builder),点击Make Project 快捷键“[Ctrl + F9]”
-构建方法2 ： 打开命令行,运行 "gradlew :module:assembleRelease"
-构建方法3 ： 运行 [build.bat]脚本文件
+构建方法1
+```
+在菜单栏里面打开构建选项(builder),点击Make Project 快捷键“[Ctrl + F9]”
+```
+
+构建方法2
+```
+打开命令行,运行 gradlew :module:assembleRelease
+```
+
+构建方法3
+```
+运行 [build.bat]脚本文件
+```
 
 如果构建成功，生成的zip模块文件在/out文件夹里.
 
